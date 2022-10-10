@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto • Balloons Imagination Factory</title>
+    <meta name="keywords" content="balloon, globo, globos, arco orgánico, miami, doral, globoflexia, lluvia, bouquet, fachadas, esculturas">
+    <meta name="description" content="Formulario de contacto de Balloons Imagination Factory">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Marko+One&family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- ANIMATE.CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/ajax/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
+    crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Javascript -->
+    <script defer src="js/main.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+<!-- INICIO SECCIÓN CABECERA -->
+
+<header class="header">
+    <nav class="nav">
+
+      <!-- LOGO -->
+      <a href="index.html">
+        <img class="logo-header" style="height: 105px; width: 260px;" title="Página de inicio de Balloons Imagination Factory" aria-label="Balloon" src="assets/Logo-BIF-Blanco-Transp.png"/>
+        </a>
+
+        <!-- BOTON MENU BURGER -->
+        <button class="nav-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- MENU NAVEGACION -->
+        <ul class="nav-menu">
+            <li class="nav-menu-item">
+                <a href="index.html" class="nav-menu-link nav-link">Inicio</a>
+            </li>
+            <li class="nav-menu-item">                    
+                <a href="gallery.html" class="nav-menu-link nav-link">
+                    <i class="fa-solid fa-shapes"></i>
+                    Galería
+                </a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="about.html" class="nav-menu-link nav-link">Sobre Nosotros</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="contact.html" class="nav-menu-link nav-link">Contacto</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="terms.html" class="nav-menu-link nav-link">Politica</a>
+            </li>
+
+            <!-- BOTON CAMBIO DE IDIOMA -->
+            <li class="nav-menu-item">
+                <img class="usflag" style="width:20px; height:15px;" aria-label="Balloon" src="assets/usflag.png"/>
+                <a href="#" class="nav-Lang-toggle nav-link">
+                    En
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- FINAL SECCION CABECERA -->
+    
+<!-- FORMULARIO CONTACTO -->
+    <main>
+        <div class="content">            
+            <h1 style="margin-top: 30px; margin-bottom: 40px;">¡Agenda tu Evento!</h1>
+            <div class="contact-form-wrapper">
+                <div class="contact-form">                    
+                    <h3 class="form-title">Formulario</h3>
+                    <h5 class="form-title">Al llenar y enviar el formulario está aceptando la <a href="Terms.html">política de la empresa</a></h5>
+                    <h5 class="form-title">* Opcional (Esta información nos ayudará a ajustarnos a nuestros clientes)</h5>
+                    <form action="https://formsubmit.co/ontiverosgian20@gmail.com" method="POST">
+                        <input type="hidden" name="_captcha" value="false">
+                        <!-- <input type="hidden" name="_next" value="thankyouform.html"> -->
+                        <input type="hidden" name="_subject" value="¡Nueva consulta!">                        
+                        <p>
+                            <label for="fullname">Nombres y Apellidos</label>
+                            <input type="text" name="Nombre Completo" id="fullname" required>
+                        </p>
+                        <p>
+                            <label for="age">Edad *</label>
+                            <input type="text" name="Edad" id="edad">
+                        </p>
+                        <p>
+                            <label>Correo Electrónico</label>
+                            <input type="email" placeholder="email@ejemplo.com" name="Correo Electrónico" required>
+                        </p>
+                        <p>
+                            <label for="phone">Número de Teléfono</label>
+                            <input type="tel" placeholder="000-000-0000" name="Número de Teléfono" id="phone" 
+                                pattern="[0-9]{10}|[0-9]{3}-[0-9]{3}-[0-9]{4}|[0-9]{3} [0-9]{3} [0-9]{4}"
+                                required>
+                        </p>
+                        <p>
+                            <label>Género *</label>
+                            <select type="text" name="Género">
+                                <option value="Vacío">-</option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Femenino">Femenino</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label>Código Postal</label>
+                            <input type="text" placeholder="00000" name="Código Postal" minlength="5" maxlength="5"  id="codigopostal" required>
+                        </p>
+                        <p class="block">
+                            <label>Dirección del Evento</label>
+                            <input type="text" name="Dirección del Evento" required>
+                        </p>
+                        <p>
+                            <label for="dateofevent">Fecha del Evento</label>
+                            <input type="date" name="Fecha del Evento" required>
+                        </p>
+                        <p>
+                            <label>Hora de Inicio del Evento</label>
+                            <input type="time" data-role="timepicker" name="Hora de Inicio del Evento" required>                        
+                        </p>
+                        <p>
+                            <label>Tipo de Decorado</label>
+                            <select type="text" name="Tipo de Decorado" required>
+                                <option value="Vacío">-</option>
+                                <option value="Arco Orgánico">Arco Orgánico</option>
+                                <option value="Fachada">Fachada</option>
+                                <option value="Globoflexia">Globoflexia</option>
+                                <option value="Bouquet">Bouquet</option>
+                                <option value="Centro de Mesa">Centro de Mesa</option>
+                                <option value="Escultura">Escultura</option>
+                                <option value="Lluvia de Globos">Lluvia de Globos</option>
+                                <option value="Fachada + Globoflexia">Fachada + Globoflexia</option>
+                                <option value="Fachada + Escultura">Fachada + Escultura</option>
+                                <option value="Fachada + Escultura + Globoflexia">Fachada + Escultura + Globoflexia</option>
+                                <option value="Arco Orgánico + Bouquet + Centro de Mesa">Arco Orgánico + Bouquet + Centro de Mesa</option>
+                                <option value="Arco Orgánico + Centro de Mesa">Arco Orgánico + Centro de Mesa</option>
+                                <option value="Otro (Concordar con la Empresa)">Otro (Mutuo Acuerdo con la Empresa)</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="Ubicacion del Decorado">¿Dónde se Instalará el Decorado?</label>
+                            <select type="text" name="Ubicacion del Decorado" required>
+                                <option value="Vacío">-</option>
+                                <option value="Interior">Interior</option>
+                                <option value="Exterior">Exterior</option>
+                                <option value="Restaurante">Restaurante</option>
+                                <option value="Salón">Salón</option>
+                                <option value="Sede">Sede</option>
+                                <option value="Oficina">Oficina</option>
+                                <option value="Parque">Parque</option>
+                                <option value="Otro (Concordar con la Empresa)">Otro (Mutuo Acuerdo con la Empresa)</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label>Presupuesto</label>
+                            <select type="text" name="Presupuesto" required>
+                                <option value="Vacío">-</option>
+                                <option value="Menos de $200">Menos de $200</option>
+                                <option value="$200">$200</option>
+                                <option value="Menos de $300">Menos de $300</option>
+                                <option value="$300">$300</option>
+                                <option value="Menos de $400">Menos de $400</option>
+                                <option value="$400">$400</option>
+                                <option value="Más de $400">Superior a $400</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label>¿Cómo se Enteró de Nosotros?</label>
+                            <select type="text" name="Nosotros">
+                                <option value="Vacío">-</option>
+                                <option value="Google">Google</option>
+                                <option value="Instagram">Instagram</option>
+                                <option value="Facebook">Facebook</option>
+                                <option value="Publicidad">Publicidad</option>
+                                <option value="Referencia de Cliente">Referencia de Cliente</option>
+                                <option value="Referencia de Vendedor">Referencia de Vendedor</option>
+                                <option value="Otros">Otros</option>
+                            </select>
+                        </p>
+                        <p class="block">
+                            <label>Más información sobre el evento</label>
+                            <textarea name="Mas Informacion Sobre el Evento" placeholder="Describa lo mejor posible sus necesidades de decoración" rows="6"></textarea>
+                        </p>            
+                        <p class="block">
+                            <button type="submit">
+                                Enviar
+                            </button>
+                        </p>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h4>Más Información</h4>
+                    <ul>
+                        <li><i style="font-size: 12px;" class="fas fa-map-pin"></i> Miami, Florida</li>
+                        <li><i style="font-size: 12px;" class="fas fa-phone"></i><a href="tel:04246235729">+1 (786) 930-3684</a></li>
+                        <li><i style="font-size: 12px;" class="fas fa-phone"></i><a href="tel:04246235729">+1 (954) 701-2184</a></li>
+                        <li style="font-size: 12px;"><i class="fas fa-envelope"></i> orlando@balloonsimaginationfactory.com</li>
+                    </ul>
+                    <p>
+                        Al solicitar nuestros servicios de decorados con globos nuestro equipo lo contactará en un rango de 24 horas. 
+                        <br><br>¡Muchas gracias por escogernos! 
+                    </p>
+                    <p class="about-link">
+                        <a href="about.html"><b>Descubre más sobre nosotros.</b></a>                        
+                    </p>
+                    <p>Balloonsimaginationfactory.com</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- INICIO SECCIÓN FOOTER -->
+
+    <footer>
+        <div class="footer-main">
+            <div class="footer-main">
+            <img class="logo-footer" src="assets/Logo-BIF-Gris-Transp.png" style="width:125px; height:50px;" alt="balloonlogo">
+            <p style="font-family: 'BIZ UDPMincho', serif;"><b>En Dios Confiamos</b></p>
+            <ul class="footer-socials">
+                <li>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p style="font-family: 'Nunito', sans serif;">copyright &copy;2022</p>
+        </div>
+    </footer>
+
+    <!-- FINAL SECCIÓN FOOTER -->
+</body>
+</html>
